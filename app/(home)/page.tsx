@@ -1,16 +1,15 @@
-import Navigation from "../../components/navigation";
-
+// import Navigation from "../../components/navigation";
 
 export const metadata = {
-  title: "About us",
+  title: "Home",
   // description: "The best movies on the best framework",
 };
 
-export default function AboutUs() {
+export default function Page() {
   return (
     <div>
       {/* <Navigation /> */}
-      <h1>About Us</h1>
+      <h1>Hello!</h1>
     </div>
   );
 }
