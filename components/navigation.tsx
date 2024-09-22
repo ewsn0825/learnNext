@@ -4,24 +4,20 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import styles from "../app/styles/navigation.module.css";
 
 export default function Navigation() {
   const path = usePathname();
-  // const [count, setCount] = useState(0);
-  // // console.log(path);
   return (
-    <nav>
+    <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/">Home</Link>
-          {path === "/" ? "시벌" : ""}
+          <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
         </li>
         <li>
-          <Link href="/about-us">About Us</Link>{" "}
-          {path === "/about-us" ? "시벌" : ""}
+          <Link href="/about-us">About Us</Link>
+          {path === "/about-us" ? "🔥" : ""}
         </li>
-    
       </ul>
     </nav>
   );
