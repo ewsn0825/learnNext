@@ -2,17 +2,16 @@
 // "use client";
 // import { useEffect, useState } from "react";
 
-import { link } from "fs";
-import Link from "next/link";
 import Movie from "../../components/movie";
-import styles from "../styles/home.module.css"
+import { API_URL } from "../constants";
+import styles from "../styles/home.module.css";
 
 export const metadata = {
   title: "Home",
   // description: "The best movies on the best framework",
 };
 
-export const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
+
 
 async function getMovies() {
   // await new Promise((resolve) => setTimeout(resolve, 10000));
