@@ -11,8 +11,6 @@ export const metadata = {
   // description: "The best movies on the best framework",
 };
 
-
-
 async function getMovies() {
   // await new Promise((resolve) => setTimeout(resolve, 10000));
   //next.js는 패칭된 데이터를 캐싱해준다 (프레임워크이기 때문)
